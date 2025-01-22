@@ -1,0 +1,123 @@
+/* main.css */
+
+/* Opći stilovi */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3f4f6; /* Svijetla siva pozadina */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #1e3a8a; /* Tamno plava boja za naslov */
+}
+
+/* Kontejner igre */
+.game-container {
+    background-color: #ffffff; /* Bijela pozadina za kontejner */
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Blaga sjena */
+    padding: 30px;
+    text-align: center;
+}
+
+/* Tabla */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: repeat(3, 120px);
+    gap: 10px;
+    margin: 20px auto;
+}
+
+/* Ćelije */
+.cell {
+    width: 120px;
+    height: 120px;
+    background-color: #e2e8f0; /* Svijetla siva boja za ćelije */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.cell:hover {
+    background-color: #cbd5e1; /* Tamnija siva boja pri hoveru */
+    transform: scale(1.05); /* Lagano povećanje pri hoveru */
+}
+
+/* Dugme za resetiranje */
+.reset-button {
+    background-color: #3b82f6; /* Plava boja za dugme */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.reset-button:hover {
+    background-color: #2563eb; /* Tamnija plava boja pri hoveru */
+}
+
+/* Status igre */
+.game-status {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #1f2937; /* Tamno siva boja za status igre */
+}
+
+/* Pop-up stilovi */
+.popup {
+    display: none; /* Sakriveno po defaultu */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Poluprozirna pozadina */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Iznad ostalih elemenata */
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.popup-button {
+    background-color: #3b82f6; /* Plava boja za dugme u pop-upu */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.popup-button:hover {
+    background-color: #2563eb; /* Tamnija plava boja pri hoveru */
+}
+
+
+
+.cell.x {
+    background-color: red; /* Boja pozadine za X */
+}
+
+.cell.o {
+    background-color: blue; /* Boja pozadine za O */
+}
