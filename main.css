@@ -18,7 +18,7 @@ h1 {
 
 /* Kontejner igre */
 .game-container {
-    background-color: #ffffff; /* Bijela pozadina za kontejner */
+    background-color: #1f2937; /* Bijela pozadina za kontejner */
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Blaga sjena */
     padding: 30px;
